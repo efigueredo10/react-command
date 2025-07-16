@@ -1,0 +1,2 @@
+[console_scripts]
+rc = react_command.main:main

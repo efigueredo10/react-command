@@ -1,0 +1,11 @@
+README.md
+setup.py
+react_command/__init__.py
+react_command/arquivos.py
+react_command/main.py
+react_command/templates.py
+react_command.egg-info/PKG-INFO
+react_command.egg-info/SOURCES.txt
+react_command.egg-info/dependency_links.txt
+react_command.egg-info/entry_points.txt
+react_command.egg-info/top_level.txt
