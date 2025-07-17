@@ -1,21 +1,22 @@
 import os
 from .templates import *
+from rich import print
 
 def criar_diretorio_componente(nome_componente):
     path = obter_path_dir_componente(nome_componente)
     criar_dir(path)
-    print(f"[CRIADO] {path}")
+    print(f"[blink bold green][CRIADO][/] {path}")
 
 def criar_diretorio_api(nome_componente):
     path = obter_path_dir_api(nome_componente)
     criar_dir(path)
-    print(f"[CRIADO] {path}")
+    print(f"[blink bold green][CRIADO][/] {path}")
 
 def criar_diretorio_componentes(nome_componente):
     pathDirBase = obter_path_dir_componente(nome_componente)
     path = os.path.join(pathDirBase, 'components')
     criar_dir(path)
-    print(f"[CRIADO] {path}")
+    print(f"[blink bold green][CRIADO][/] {path}")
 
 def criar_arquivos_componente(nome_componente):
     nome_arquivo_componente = f"{nome_componente}.tsx"
@@ -31,16 +32,16 @@ def criar_arquivos_componente(nome_componente):
     criar_arquivo(path_arquivo_componente_css, '')
     criar_arquivo(path_arquivo_componente_types, '')
     
-    print(f"[CRIADO] {path_arquivo_componente}")
-    print(f"[CRIADO] {path_arquivo_componente_css}")
-    print(f"[CRIADO] {path_arquivo_componente_types}")
+    print(f"[blink bold green][CRIADO][/] {path_arquivo_componente}")
+    print(f"[blink bold green][CRIADO][/] {path_arquivo_componente_css}")
+    print(f"[blink bold green][CRIADO][/] {path_arquivo_componente_types}")
 
 def criar_arquivo_api(nome_componente):
     nome_arquivo_api = f"{nome_componente}.api.ts"
     path = obter_path_arquivo_api(nome_componente, nome_arquivo_api)
     conteudo_arquivo_api = obter_template_arquivo_api(nome_componente)
     criar_arquivo(path, conteudo_arquivo_api)
-    print(f"[CRIADO] {path}")
+    print(f"[blink bold green][CRIADO][/] {path}")
 
 def criar_dir(path):
     os.makedirs(path, exist_ok=True)
