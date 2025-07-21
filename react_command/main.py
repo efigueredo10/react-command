@@ -1,4 +1,4 @@
-from .acoes import obter_acao, obter_funcao_acao
+from react_command.acoes import obter_acao, obter_funcao_acao
 import os
 import argparse
 from rich.prompt import Prompt
@@ -19,3 +19,6 @@ def obter_argumentos():
     parser.add_argument("-t", "--tela", help="É tela", action='store_true')
     parser.add_argument("-r", "--reducer", help="Com Reducer", action='store_true')
     return parser.parse_args()
+
+if __name__ == "__main__":
+    main()

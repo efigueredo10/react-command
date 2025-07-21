@@ -1,5 +1,5 @@
 from enum import Enum
-from .componentes import *
+from react_command.componentes import *
 
 class Acao(Enum):
     TELA = "tela"
