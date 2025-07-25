@@ -13,7 +13,7 @@ comandos = {
     "listagem": lambda nome_componente, argumentos: criar_tela_listagem(nome_componente, argumentos),
   },
   Comando.COMPONENTE: {
-    None: 'componente cru',
+    None: lambda nome_componente, argumentos: criar_componente(nome_componente, argumentos.reducer),
     "modal": None,
     "modalListaDupla": None
   }

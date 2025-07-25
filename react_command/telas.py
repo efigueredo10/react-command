@@ -1,5 +1,7 @@
-from react_command.arquivos import *
+from react_command.arquivos_basicos import *
 from rich.prompt import Prompt
+from react_command.arquivos.tela_listagem.arquivos_tela_listagem import *
+from react_command.arquivos.componente.arquivo_componente import *
 
 def criar_tela(nome_tela, com_reducer: True):
     print(f"\n[blink bold magenta][CRIANDO TELA][/] {nome_tela}\n")
